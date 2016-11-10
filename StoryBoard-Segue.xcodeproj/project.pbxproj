@@ -14,6 +14,8 @@
 		EA1680761D44E3410078719E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1680741D44E3410078719E /* LaunchScreen.storyboard */; };
 		EA1680811D44E3410078719E /* StoryBoard_SegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1680801D44E3410078719E /* StoryBoard_SegueTests.swift */; };
 		EA16808C1D44E3410078719E /* StoryBoard_SegueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16808B1D44E3410078719E /* StoryBoard_SegueUITests.swift */; };
+		EA16809A1D44E4650078719E /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1680991D44E4650078719E /* BlueVC.swift */; };
+		EA16809C1D44E47A0078719E /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16809B1D44E47A0078719E /* RedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		EA1680871D44E3410078719E /* StoryBoard-SegueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoryBoard-SegueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16808B1D44E3410078719E /* StoryBoard_SegueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard_SegueUITests.swift; sourceTree = "<group>"; };
 		EA16808D1D44E3410078719E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1680991D44E4650078719E /* BlueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
+		EA16809B1D44E47A0078719E /* RedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,8 @@
 		EA16806A1D44E3410078719E /* StoryBoard-Segue */ = {
 			isa = PBXGroup;
 			children = (
+				EA16809D1D44E4AE0078719E /* Views */,
 				EA16806B1D44E3410078719E /* AppDelegate.swift */,
-				EA16806D1D44E3410078719E /* ViewController.swift */,
 				EA16806F1D44E3410078719E /* Main.storyboard */,
 				EA1680721D44E3410078719E /* Assets.xcassets */,
 				EA1680741D44E3410078719E /* LaunchScreen.storyboard */,
@@ -123,6 +127,16 @@
 				EA16808D1D44E3410078719E /* Info.plist */,
 			);
 			path = "StoryBoard-SegueUITests";
+			sourceTree = "<group>";
+		};
+		EA16809D1D44E4AE0078719E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA1680991D44E4650078719E /* BlueVC.swift */,
+				EA16809B1D44E47A0078719E /* RedVC.swift */,
+				EA16806D1D44E3410078719E /* ViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,15 +208,18 @@
 					EA1680671D44E3410078719E = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = ML9FUD8KSJ;
+						LastSwiftMigration = 0810;
 					};
 					EA16807B1D44E3410078719E = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = ML9FUD8KSJ;
+						LastSwiftMigration = 0810;
 						TestTargetID = EA1680671D44E3410078719E;
 					};
 					EA1680861D44E3410078719E = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = ML9FUD8KSJ;
+						LastSwiftMigration = 0810;
 						TestTargetID = EA1680671D44E3410078719E;
 					};
 				};
@@ -261,6 +278,8 @@
 			files = (
 				EA16806E1D44E3410078719E /* ViewController.swift in Sources */,
 				EA16806C1D44E3410078719E /* AppDelegate.swift in Sources */,
+				EA16809C1D44E47A0078719E /* RedVC.swift in Sources */,
+				EA16809A1D44E4650078719E /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martinmatejka2.StoryBoard-Segue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martinmatejka2.StoryBoard-Segue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martinmatejka2.StoryBoard-SegueTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoryBoard-Segue.app/StoryBoard-Segue";
 			};
 			name = Debug;
@@ -440,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martinmatejka2.StoryBoard-SegueTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoryBoard-Segue.app/StoryBoard-Segue";
 			};
 			name = Release;
@@ -451,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martinmatejka2.StoryBoard-SegueUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "StoryBoard-Segue";
 			};
 			name = Debug;
@@ -462,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martinmatejka2.StoryBoard-SegueUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "StoryBoard-Segue";
 			};
 			name = Release;
@@ -485,6 +510,7 @@
 				EA1680921D44E3410078719E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA1680931D44E3410078719E /* Build configuration list for PBXNativeTarget "StoryBoard-SegueTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +519,7 @@
 				EA1680951D44E3410078719E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA1680961D44E3410078719E /* Build configuration list for PBXNativeTarget "StoryBoard-SegueUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +528,7 @@
 				EA1680981D44E3410078719E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
